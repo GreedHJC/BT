@@ -1,0 +1,59 @@
+option {
+color: black;
+}
+.custom-select {
+width: 200px;
+background-color: transparent;
+border-radius: 0;
+border-right-color: white;
+border-bottom-color: transparent;
+border-top-color: transparent;
+border-left-color: transparent;
+height: 3em;
+color: aliceblue;
+    }
+
+.custom-select:disabled {
+background-color: transparent;
+color: aliceblue;
+}
+
+.sp-nav {
+background-color: #253140;
+    }
+
+.sp-nav-category {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #253140;
+
+}
+
+.sp-nc-dist {
+    display:flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+#ma-category{
+    border-left-color: white;
+}
+
+.sp-nc-search {
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 30%;
+
+}
+.form-control {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.sp-btn-search {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

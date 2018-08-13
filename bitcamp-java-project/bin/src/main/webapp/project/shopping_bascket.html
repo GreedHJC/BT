@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>장바구니</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/shopping_bascket.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+<body>
+<header>
+	<div class="header_bg">
+		<div class="header_logo">
+			<a href="./index.html"><img src="./images/header/logo.png"></a>
+		</div>
+		<div class="header_nav1">
+			<a href="./login.html">로그인</a>
+			<a href="./form.html">회원가입</a>
+		</div>
+		<div class="header_nav2">
+			<a href="./interia_introduce.html">소개</a>
+			<a href="./product_list.html" style="color: #ffc001;">판매작품</a>
+			<a href="./workshop_main.html">공방</a>
+			<a href="./photo_main.html">자랑하기</a>
+		</div>
+		<div class="header_search">
+			<input type="text" name="searchkeyword" placeholder="검색">
+			<button type="button" onClick="location.href='./search-list-all.html'"><img src="./images/header/header_serach.png"></button>
+		</div>
+	</div>
+</header>
+<div class="sp-sb-header1">
+    <div class="sp-sb-header2">
+        <div class="sp-sb-h-name">
+            <p>장바구니</p>
+        </div>
+        <div class="sp-sb-h-nav">
+            <p><b>장바구니</b>&ensp;>&ensp;주문결제&ensp;>&ensp;주문완료</p>
+        </div>
+    </div><!-- sp-sb-header2 -->
+</div><!-- sp-sb-header1 -->
+<div class="sp-sb-option1">
+    <div class="sp-sb-option2">
+        <a href="#">전체 선택</a> &ensp;|&ensp; <a href="#">선택 삭제</a>
+    </div>
+</div>
+    
+<div class="ib-container">
+    <div class="sp-sb-list">
+        <div class="sp-sb-list-store">
+            <div class="sp-sb-sname">
+                <p>가게명</p>
+            </div>
+            <div class="sp-sb-sproduct">
+                <div class="sp-sb-check">
+                    <input type="checkbox" style="width: 20px; height:20px;">
+                </div>
+                <div class="sp-sb-img">  
+                    <div class="sp-sb-putimg">
+                    <img src="images/shopping_basket/sample_product.jpg"/>
+                    </div>
+                </div>
+                <div class="sp-sb-info">
+                    <div class="sp-sb-info-name">
+                        <p>비트공방</p>
+                    </div>
+                    <div class="sp-sb-info-product">
+                        <p>Flence side Table_2color</p>
+                    </div>
+                    <div class="sp-sb-info-option">
+                        <p>블랙</p>
+                    </div>
+                    <div class="sp-sb-info-delivery">
+                        <p>무료배송&ensp;|&ensp;일반택배배송</p>
+                    </div>
+                </div>
+                <div class="sp-sb-qty">
+                    <div class="sp-sb-qty-wrap">
+                        <div class="sp-sb-qty-btn-wrap">
+                        <button class = "sp-sb-qty-minus">
+                            <i class="far fa-minus-square"></i>
+                        </button>
+                        </div>
+                            <input class="item_qty_count" type="text" maxlength="3" value="1">
+                        <div class="sp-sb-qty-btn-wrap">
+                        <button class = "sp-sb-qty-plus">
+                            <i class="far fa-plus-square"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-sb-productprice">
+                    <p>15,900 원</p>
+                </div>
+            </div>
+            <div class="sp-sb-sproduct">
+                <div class="sp-sb-check">
+                    <input type="checkbox" style="width: 20px; height:20px;">
+                </div>
+                <div class="sp-sb-img">  
+                    <div class="sp-sb-putimg">
+                    <img src="images/shopping_basket/sample_product.jpg"/>
+                    </div>
+                </div>
+                <div class="sp-sb-info">
+                    <div class="sp-sb-info-name">
+                        <p>비트공방</p>
+                    </div>
+                    <div class="sp-sb-info-product">
+                        <p>Flence side Table_2color</p>
+                    </div>
+                    <div class="sp-sb-info-option">
+                        <p>블랙</p>
+                    </div>
+                    <div class="sp-sb-info-delivery">
+                        <p>무료배송&ensp;|&ensp;일반택배배송</p>
+                    </div>
+                </div>
+                <div class="sp-sb-qty">
+                    <div class="sp-sb-qty-wrap">
+                        <div class="sp-sb-qty-btn-wrap">
+                        <button class = "sp-sb-qty-minus">
+                            <i class="far fa-minus-square"></i>
+                        </button>
+                        </div>
+                            <input class="item_qty_count" type="text" maxlength="3" value="1">
+                        <div class="sp-sb-qty-btn-wrap">
+                        <button class = "sp-sb-qty-plus">
+                            <i class="far fa-plus-square"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-sb-productprice">
+                    <p>15,900 원</p>
+                </div>
+            </div>
+            <div class="sp-sb-sprice">
+                <p>총 상품 가격 318,000 원&ensp;&ensp;&ensp;</p>
+                    <i class="fas fa-plus-circle"></i>
+                <p>&ensp;&ensp;&ensp;배송비 0 원&ensp;&ensp;&ensp;</p>
+                    <i class="fas fa-equals"></i>
+                <p>&ensp;&ensp;&ensp;총 주문 금액 318,000 원</p>
+            </div>
+        </div>
+        <div class="sp-sb-list-store">
+            <div class="sp-sb-sname">
+                <p>가게명</p>
+            </div>
+            <div class="sp-sb-sproduct">
+                <div class="sp-sb-check">
+                    <input type="checkbox" style="width: 20px; height:20px;">
+                </div>
+                <div class="sp-sb-img">  
+                    <div class="sp-sb-putimg">
+                    <img src="images/shopping_basket/sample_product.jpg"/>
+                    </div>
+                </div>
+                <div class="sp-sb-info">
+                    <div class="sp-sb-info-name">
+                        <p>비트공방</p>
+                    </div>
+                    <div class="sp-sb-info-product">
+                        <p>Flence side Table_2color</p>
+                    </div>
+                    <div class="sp-sb-info-option">
+                        <p>블랙</p>
+                    </div>
+                    <div class="sp-sb-info-delivery">
+                        <p>무료배송&ensp;|&ensp;일반택배배송</p>
+                    </div>
+                </div>
+                <div class="sp-sb-qty">
+                    <div class="sp-sb-qty-wrap">
+                        <div class="sp-sb-qty-btn-wrap">
+                        <button class = "sp-sb-qty-minus">
+                            <i class="far fa-minus-square"></i>
+                        </button>
+                        </div>
+                            <input class="item_qty_count" type="text" maxlength="3" value="1">
+                        <div class="sp-sb-qty-btn-wrap">
+                        <button class = "sp-sb-qty-plus">
+                            <i class="far fa-plus-square"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-sb-productprice">
+                    <p>15,900 원</p>
+                </div>
+            </div>
+            <div class="sp-sb-sprice">
+                <p>총 상품 가격 318,000 원&ensp;&ensp;&ensp;</p>
+                    <i class="fas fa-plus-circle"></i>
+                <p>&ensp;&ensp;&ensp;배송비 0 원&ensp;&ensp;&ensp;</p>
+                    <i class="fas fa-equals"></i>
+                <p>&ensp;&ensp;&ensp;총 주문 금액 318,000 원</p>
+            </div>
+        </div>
+    </div>
+    <div class="sp-sb-totalprice">
+        <div class="sp-sb-order">
+            <div class="sp-sb-tpname">
+                <p>전체합계</p>
+            </div>
+            <div class="sp-sb-tptotal">
+                <p>전체 상품 금액</p>
+                <p>47,000 원</p>
+            </div>
+            <div class="sp-sb-tpdelivery">
+                <p>전체 배송비</p>
+                <p>0 원</p>
+            </div>
+            <div class="sp-sb-tpfinal">
+                <p>결제금액</p>
+                <p>47,000 원</p>
+            </div>
+            <div class="sp-sb-payment" onclick="location.href='www.naver.com'">
+                <a href="./purchase-production.html"><p>결제하기</p></a>
+            </div>
+        </div>
+    </div>
+</div>  
+     
+<footer>
+	<div class="bt-footer">
+      <div class="bt-ft-content">
+        <p class="bt-ft-service"><a href="#">서비스소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">채용정보</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">개인정보취급방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">고객의소리</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">제휴/광고문의</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">판매자신청</a></p>
+        <address class="bt-ft-address">
+          상호명 : (주)인테리아&nbsp;&nbsp;이메일 : contact@interia.com&nbsp;&nbsp;팀원 : 경명수 강동현 이상경 성현동 임현식 박서경&nbsp;&nbsp;사업자등록번호 : 111-11-11111&nbsp;&nbsp;통신판매업신고번호 : 제1111-서울관악-0000호&nbsp;&nbsp;주소 : 비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩&nbsp;&nbsp;<strong>NAVERPAY</strong> 안전거래 서비스 : 고객님의 안전거래를 위해 현금 결제 시, 저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다.
+        </address>
+        <span class="bt-ft-copy">Copyright (c) 2018 INTERIA., Ltd, All Rights Reserved</span>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>

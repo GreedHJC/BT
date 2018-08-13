@@ -1,0 +1,164 @@
+.ad-status-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 2.5em;
+}
+.ad-status-all {
+    background: url('../images/store_admin/wholeproduct.png') no-repeat;
+    background-size: contain;
+}
+.ad-status-sell {
+    background: url('../images/store_admin/sellingproduct.png') no-repeat;
+        background-size: contain;
+}
+.ad-status-sold {
+    background: url('../images/store_admin/soldout.png') no-repeat;
+        background-size: contain;
+}
+.ad-status-wait {
+    background: url('../images/store_admin/waitproduct.png') no-repeat;
+        background-size: contain;
+}
+.ad-status-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.ad-product-status {
+    display: flex;
+    align-items: center;
+}
+.ad-status-content {
+    font-size: 1.25rem;
+}
+.ad-status-content p:first-child{
+    font-weight: 900;
+}
+.searchInfo {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.searchTerm{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.searchDist p:first-child{
+    margin-right: .625em;
+    font-weight: bold;
+}
+.searchDist {
+    display: flex;
+    margin-bottom: .625em;
+}
+.searchText input {
+    width: 140px;
+    margin-right: .625em;
+}
+.searchDist ul {
+    padding: 0;
+    margin: 0;
+}
+.searchDist li {
+    float: left;
+}
+.ad-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 2.1875em;
+    margin-bottom: .75em;
+    cursor: pointer;
+    user-select: none;
+}
+.ad-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.ad-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.ad-checkbox:hover input ~ .ad-checkmark {
+    background-color: #ccc;
+}
+.ad-checkbox input:checked ~ .ad-checkmark {
+    background-color: #ffc001;
+}
+.ad-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.ad-checkbox input:checked ~ .ad-checkmark:after {
+    display: block;
+}
+.ad-checkbox .ad-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.ad-cat-select {
+  position: relative;
+  width:150px;
+  margin-left: .3125em;
+  margin-right: .3125em;
+}
+.ad-cat-select select {
+  display: none; 
+}
+.select-selected {
+  background-color: #ffc001;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 0.3125em 0.625em;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.select-items {
+  position: absolute;
+  background-color: #ffc001;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ad-cat-search {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    width: 200px;
+}
+
+
+

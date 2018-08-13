@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+html {font-size: 16px}
+body {font-family: 'Nanum Gothic'; background-color: ivory}
+h1,h2,h3,h4,h5,h6,p {margin: 0;padding: 0;}
+a {color:#333;text-decoration:none;}
+a:active, a:hover {text-decoration:none;}
+li{
+    display: list-item;
+    list-style: none;
+
+}
+.ad-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    height: 3.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    
+    align-items: center;
+    padding: .5em 1em;
+    background-color: #ffc001;
+    color: white;
+    
+}
+.ad-navbar-brand {
+    width: 200px;
+    display: inline-block;
+    padding-top: .3125em;
+    padding-bottom: .3125em;
+    margin-right: 1em;
+    margin-left: 2.5em;
+    font-size: 1.6em;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #fff;
+    
+    
+}
+
+.ad-navbar-collapse .ad-navbar-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    margin-top: 3.5em;
+}
+.ad-navbar-collapse {
+    overflow: visible;
+    max-height: none;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+    
+    
+}
+.ad-navbar-side {
+    height: calc(100vh - 3.5em);
+    width: 200px;
+    background-color: #1c2036;
+    
+}
+.ad-navbar-storename {
+    padding: 1em;;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ad-navbar-img{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
+.ad-navbar-storename > a {
+    margin-top: 1.25em;
+    font-weight: bold;
+    
+}
+.ad-navbar-itemlist > .ad-nav-item {
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 0;
+}
+.ad-navbar-itemlist >.ad-nav-item > .ad-nav-link{
+    padding: 1em;
+    cursor: pointer;
+    display: block;
+    color:white;
+}
+
+.ad-nav-second {
+    display: none;
+}
+
+.ad-nav-second > li {
+    margin-bottom: 0.625em;
+}
+
+.ad-nav-second a {
+    color: white;
+}
+
+
+.ad-navbar-menu {
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+.ad-navbar-menuitem {
+    margin-left: 1.875em;
+    padding: 0;
+    border: 0;
+    float: left;
+}
+.ad-navbar-menuitem a {
+    color: white;
+}
+.ad-navbar-select {
+    line-height: 2.5;
+    font-size: 0.875rem;
+}
+.ad-navbar-home {
+    margin-right: 1em;
+    font-size: 1.5625rem;
+}
+.ad-main-wrapper{
+    height:  calc(100vh - 3.5em);
+    margin-top: 3.5em;
+    margin-left: 12.5em;
+    padding-top: 1em;
+    width: auto;
+}
+.ad-main-content{
+    width: 100%;
+    padding-right: 0.9375em;
+    padding-left: 0.9375em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ad-breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75em 1em;
+    margin-bottom: 1em;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25em;
+}
+.ad-breadcrumb-item+.ad-breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5em;
+    padding-left: .5em;
+    color: #6c757d;
+    content: "/";
+}
+.ad-breadcrumb-item .active {
+    color: #6c757d;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box; 
+}
+
+.ad-card-default {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25em;
+    margin-bottom: 1.5em;
+    background-color: white
+}
+
+.ad-card-header{
+    padding: .75em 1.25em;
+    background-color: #ccc;
+    border-bottom: 2px solid rgba(0,0,0,.125);
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.ad-card-body{
+    flex: 1 1 auto;
+    padding: 1.25em;
+
+}
+
+.ad-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.9375em;
+    margin-left: -0.9375em;
+}
+
+.ad-card-wrapper{
+    margin-bottom: 1rem!important;
+    
+    flex: 0 0 25%;
+    max-width: 25%;
+
+    position: relative;
+    width: 1720px;
+    min-height: 1px;
+    padding-right: 0.9375em;
+    padding-left: 0.9375em;
+    color: white
+}

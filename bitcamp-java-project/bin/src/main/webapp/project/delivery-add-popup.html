@@ -1,0 +1,129 @@
+
+<!-- 
+    나중에 자바스크립트로 기능을 제어할 때, 필요 없는 부분 제거하면서 진행 할 것!! 
+    지금은 그냥 폼만 구성했으므로, 그냥 순수 html과 css로 겉표지만 만든 상태이다
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>팝업용 배송지 추가 폼</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> <!-- 아이콘 사용할 링크 -->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<!-- css 코딩 일부 -->
+<style>
+        .sp-container {
+            width:500px;
+            /* height:800px; */
+            margin: 0 auto; /* 자동으로 가운데 정렬 하도록 설정 */
+        }
+</style>
+<link rel="stylesheet" href="css/delivery-add-popup.css" >
+
+</head>
+<body>
+    <header>
+        <div class="header_bg">
+            <div class="header_logo">
+                <a href="#"><img src="./images/header/logo.png"></a>
+            </div>
+            <div class="header_nav1">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="header_nav2">
+                <a href="#">소개</a>
+                <a href="#">판매작품</a>
+                <a href="#">공방</a>
+                <a href="#">자랑하기</a>
+            </div>
+            <div class="header_search">
+                <input type="text" name="searchkeyword" placeholder="검색">
+                <button><img src="./images/header/header_serach.png"></button>
+            </div>
+        </div>
+    </header>
+    <div class="sp-container" style="margin-top: 7.5em;">
+        <!-- 배송지 선택 관련 폼 -->
+        <h3 class="sp-title">배송지 선택</h3>
+        <hr class="sp-contour"> <!-- 구분선 -->
+        <form class="form-horizontal">
+
+        <div id="" class="sp-form-botton ">
+            <div class="sp-scroll-blind">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend" >
+                        <span class="input-group-text sp-add-form-icon" id=""><i class="fas fa-user sp-add-align-icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="받는 사람">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text sp-add-form-icon" id=""><i class="fas fa-map-marker-alt sp-add-align-icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control sp-input-none" placeholder="우편번호 찾기">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text sp-input-group-text-bitcamp">
+                                <!-- 만일 button 방식으로 한 코드 방식이 맘에 안들면 jQuery로 이용하여 수정하기 -->
+                            <button class="sp-btn-none"><i class="fas fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text sp-add-form-icon" id="basic-addon1"><i class="fas fa-mobile-alt sp-add-align-icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="휴대폰번호 찾기">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text sp-add-form-icon" id="basic-addon1"><i class="fas fa-phone sp-add-align-icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="연락처 찾기">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text sp-add-form-icon" id="basic-addon1"><i class="fas fa-clipboard-list sp-add-align-icon"></i></span>
+                    </div>
+                    <input type="text" class="form-control sp-input-none" placeholder="배송 요청 사항">
+                    <!-- 만일 button 방식으로 한 코드 방식이 맘에 안들면 jQuery로 이용하여 수정하기 -->
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text sp-input-group-text-bitcamp">
+                            <button class="sp-btn-none"><i class="fas fa-angle-right"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="cols input-group-prepend" style="font-size:0.7rem">
+                        <input type="checkbox" class="sp-chk-set" > &nbsp; <label>기본 배송지로 저장</label>
+                    </div>
+                </div>
+            </div>
+
+                <!-- 저장 하기 -->
+            <input align="center" type="button" class="col btn btn-warning btn-lg sp-btn-color" value="저장">
+            </div>
+        </form>
+        
+    <footer>
+        <div class="bt-footer">
+          <div class="bt-ft-content">
+            <p class="bt-ft-service"><a href="#">서비스소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">채용정보</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">개인정보취급방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">고객의소리</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">제휴/광고문의</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">판매자신청</a></p>
+            <address class="bt-ft-address">
+              상호명 : (주)인테리아&nbsp;&nbsp;이메일 : contact@interia.com&nbsp;&nbsp;팀원 : 경명수 강동현 이상경 성현동 임현식 박서경&nbsp;&nbsp;사업자등록번호 : 111-11-11111&nbsp;&nbsp;통신판매업신고번호 : 제1111-서울관악-0000호&nbsp;&nbsp;주소 : 비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩&nbsp;&nbsp;<strong>NAVERPAY</strong> 안전거래 서비스 : 고객님의 안전거래를 위해 현금 결제 시, 저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다.
+            </address>
+            <span class="bt-ft-copy">Copyright (c) 2018 INTERIA., Ltd, All Rights Reserved</span>
+          </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

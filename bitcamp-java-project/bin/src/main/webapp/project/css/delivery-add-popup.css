@@ -1,0 +1,76 @@
+.sp-form-botton {
+    /* padding-bottom:13em; */
+    padding-top:1.25em;
+    height:500px;
+}
+
+.sp-form-address-information {
+    border:1px solid black;
+    margin:0 1.25em 0 1.25em; 
+    padding-top:10px;
+    padding-bottom: 10px;
+    overflow:hidden;
+}
+
+    /* 나머지 부분 */
+.sp-contour {
+    border: 2px solid gray;
+}
+
+
+.sp-title {
+    padding: 0.625em 0.625em 0 0.625em; /* 위 오 아 왼*/
+    text-align:center;
+}
+
+.sp-scroll-blind {    
+    position: relative;
+    height:100%; 
+    overflow-y:scroll;
+}
+
+.sp-scroll-blind::-webkit-scrollbar {
+    display: none;
+}
+
+.sp-add-form-icon {
+    width:40px;
+    background:#e6e6e6
+}
+
+.sp-add-align-icon{
+    margin:auto;
+}
+
+.sp-input-icon-button {
+    overflow:hidden;
+}
+
+.sp-btn-none {
+    background-color: white;
+    border: none;
+    grid-column-end: auto;
+    float: right;
+}
+
+.sp-input-none {
+    border-right:none;
+}
+
+span.sp-input-group-text-bitcamp {
+    background-color: white;
+    margin-right:1px;
+    border-left: none;
+}
+
+.sp-btn-color {
+    color:white;
+}
+
+.sp-chk-set {
+    background:#e6e6e6; 
+    box-shadow: none; 
+    border:none;
+    margin-top:0.125rem;
+}
+

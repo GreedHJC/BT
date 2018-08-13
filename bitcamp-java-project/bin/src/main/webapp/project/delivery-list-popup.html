@@ -1,0 +1,164 @@
+
+<!-- 
+    나중에 자바스크립트로 기능을 제어할 때, 필요 없는 부분 제거하면서 진행 할 것!! 
+    지금은 그냥 폼만 구성했으므로, 그냥 순수 html과 css로 겉표지만 만든 상태이다
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>팝업용 배송지 리스트 폼</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<style>
+        .sp-container {
+            width:500px;
+            /* height:800px; */
+            margin: 0 auto; /* 자동으로 가운데 정렬 하도록 설정 */
+        }
+</style>
+<link rel="stylesheet" href="css/delivery-list-popup.css" >
+
+</head>
+<body>
+    <header>
+        <div class="header_bg">
+            <div class="header_logo">
+                <a href="#"><img src="./images/header/logo.png"></a>
+            </div>
+            <div class="header_nav1">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="header_nav2">
+                <a href="#">소개</a>
+                <a href="#">판매작품</a>
+                <a href="#">공방</a>
+                <a href="#">자랑하기</a>
+            </div>
+            <div class="header_search">
+                <input type="text" name="searchkeyword" placeholder="검색">
+                <button><img src="./images/header/header_serach.png"></button>
+            </div>
+        </div>
+    </header>
+    <div class="sp-container">
+        <!-- 배송지 선택 관련 폼 -->
+        <h3 class="sp-title">배송지 선택</h3>
+        <hr class="sp-contour"> <!-- 구분선 -->
+        <form class="form-horizontal">
+
+        <div id="" class="sp-form-botton ">
+            <div class="sp-scroll-blind">
+
+                <!-- 
+                    이부분 반복문으로 표현할 것! ==> 지금은 그냥 실험용으로만 div를 3개를 만든 것이다!! 
+                -->
+                <div class="form-group sp-form-address-information ">
+                <div class="col-sm-10">
+                    <!-- 
+                        지금은 그냥 div로 불러오고, 라벨을 이용하여 값만 넣는 걸로만 한다!
+                        나중에 라벨로 저장된 값들은 이것들은 자바 스크립트 문법으로 이용하여 처리 하도록 한다.
+                    -->
+                    <div id="">
+                        <label for="sp-delivery-name" class="col">홍길동</label>  
+                    </div>
+                    <div id="">
+                        <label for="sp-delivery-address" class="col">서울특별시 서초구 서초2동 1327-33</label>  
+                    </div>
+                    <div id="">
+                        <label for="sp-delivery-phone" class="col">010-1234-5678</label>  
+                    </div>
+                    <div id="">
+                        <label for="sp-delivery-memo" class="col">직접 받고 부재 시 문 앞</label>  
+                    </div>
+                    <div id="" class="row col">
+                        <div class="col">
+                            <input type="button" class="btn sp-defalut-btn btn-lg" value="수정">
+                        </div>
+                        <div class="col">
+                            <input type="button" class="btn sp-select-btn btn-lg sp-btn-right" value="선택">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group sp-form-address-information ">
+                    <div class="col-sm-10">
+                        <!-- 
+                            지금은 그냥 div로 불러오고, 라벨을 이용하여 값만 넣는 걸로만 한다!
+                            나중에 라벨로 저장된 값들은 이것들은 자바 스크립트 문법으로 이용하여 처리 하도록 한다.
+                        -->
+                        <div id="">
+                            <label for="sp-delivery-name" class="col">홍길동</label>  
+                        </div>
+                        <div id="">
+                            <label for="sp-delivery-address" class="col">서울특별시 서초구 서초2동 1327-33</label>  
+                        </div>
+                        <div id="">
+                            <label for="sp-delivery-phone" class="col">010-1234-5678</label>  
+                        </div>
+                        <div id="">
+                            <label for="sp-delivery-memo" class="col">직접 받고 부재 시 문 앞</label>  
+                        </div>
+                        <div id="" class="row col">
+                            <div class="col">
+                                <input type="button" class="btn sp-defalut-btn btn-lg" value="수정">
+                            </div>
+                            <div class="col">
+                                <input type="button" class="btn sp-select-btn btn-lg sp-btn-right" value="선택">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group sp-form-address-information ">
+                        <div class="col-sm-10">
+                            <!-- 
+                                지금은 그냥 div로 불러오고, 라벨을 이용하여 값만 넣는 걸로만 한다!
+                                나중에 라벨로 저장된 값들은 이것들은 자바 스크립트 문법으로 이용하여 처리 하도록 한다.
+                            -->
+                            <div id="">
+                                <label for="sp-delivery-name" class="col">홍길동</label>  
+                            </div>
+                            <div id="">
+                                <label for="sp-delivery-address" class="col">서울특별시 서초구 서초2동 1327-33</label>  
+                            </div>
+                            <div id="">
+                                <label for="sp-delivery-phone" class="col">010-1234-5678</label>  
+                            </div>
+                            <div id="">
+                                <label for="sp-delivery-memo" class="col">직접 받고 부재 시 문 앞</label>  
+                            </div>
+                            <div id="" class="row col">
+                                <div class="col">
+                                    <input type="button" class="btn sp-defalut-btn btn-lg" value="수정">
+                                </div>
+                                <div class="col">
+                                    <input type="button" class="btn sp-select-btn btn-lg sp-btn-right" value="선택">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+            </div>
+                <!-- 배송지 추가하기 -->
+            <input align="center" type="button" class="col btn sp-defalut-btn btn-lg sp-add-delivery-btn" value="+ 배송지 추가">
+        </form>
+        
+    
+<footer>
+	<div class="bt-footer">
+      <div class="bt-ft-content">
+        <p class="bt-ft-service"><a href="#">서비스소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">채용정보</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">개인정보취급방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">고객의소리</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">제휴/광고문의</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">판매자신청</a></p>
+        <address class="bt-ft-address">
+          상호명 : (주)인테리아&nbsp;&nbsp;이메일 : contact@interia.com&nbsp;&nbsp;팀원 : 경명수 강동현 이상경 성현동 임현식 박서경&nbsp;&nbsp;사업자등록번호 : 111-11-11111&nbsp;&nbsp;통신판매업신고번호 : 제1111-서울관악-0000호&nbsp;&nbsp;주소 : 비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩&nbsp;&nbsp;<strong>NAVERPAY</strong> 안전거래 서비스 : 고객님의 안전거래를 위해 현금 결제 시, 저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다.
+        </address>
+        <span class="bt-ft-copy">Copyright (c) 2018 INTERIA., Ltd, All Rights Reserved</span>
+      </div>
+    </div>
+</footer>
+    
+    
+</body>
+</html>

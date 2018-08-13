@@ -1,0 +1,61 @@
+.sp-form-botton {
+    /* padding-bottom:13em; */
+    padding-top:1.25em;
+    height:500px;
+}
+
+.sp-form-address-information {
+    border:1px solid black;
+    margin:0 1.25em 0 1.25em; 
+    padding-top:10px;
+    padding-bottom: 10px;
+    overflow:hidden;
+}
+
+.sp-form-address-information:hover {
+    border:2px solid gold;
+}
+
+
+    /* 나머지 부분 */
+.sp-contour {
+    border: 2px solid gray;
+}
+
+
+.sp-title {
+    padding: 0.625em 0.625em 0 0.625em; /* 위 오 아 왼*/
+    text-align:center;
+}
+
+.sp-btn-right {
+    position:relative; 
+    left:120%
+}
+
+.sp-defalut-btn {
+    border:1px solid black;
+    background-color:#FFFFFF;
+    color: gold
+}
+
+.sp-select-btn {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.sp-scroll-blind {    
+    position: relative;
+    height:100%; 
+    overflow-y:scroll;
+    
+}
+
+.sp-scroll-blind::-webkit-scrollbar {
+    display: none;
+}
+
+.sp-add-delivery-btn {
+    margin-top: 1em;
+}

@@ -1,0 +1,46 @@
+.ad-card{
+    overflow: hidden !important;
+}
+
+.ad-card-c1{
+    background-color: #08224C;
+}
+
+.ad-card-c2{
+    background-color: #4583E5;
+}
+
+.ad-card-c3{
+    background-color: #1F4E99;
+}
+
+.ad-card-c4{
+    background-color: #FFAB01;
+}
+
+
+.ad-card-body-icon{
+    position: absolute;
+    z-index: 0;
+    top: -25px;
+    right: -25px;
+    font-size: 5rem;
+    transform: rotate(15deg);
+}
+.ad-card-content {
+    margin-right: 3rem;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border-bottom: 1px solid white;
+    
+}
+.ad-card-data{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+

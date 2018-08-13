@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>자랑하기</title>
+    <link rel="stylesheet" href="css/photo_main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/select_photo.css">
+    <link rel="stylesheet" href="css/select_photo_link.css">
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script src='https://rawgit.com/tuupola/jquery_chained/master/jquery.chained.min.js'></script>
+
+
+  </head>
+  <body>
+  <!-- header -->
+  <header>
+  	<div class="header_bg">
+		<div class="header_logo">
+			<a href="./index.html"><img src="./images/header/logo.png"></a>
+		</div>
+		<div class="header_nav1">
+			<a href="./login.html">로그인</a>
+			<a href="./form.html">회원가입</a>
+		</div>
+		<div class="header_nav2">
+			<a href="./interia_introduce.html">소개</a>
+			<a href="./product_list.html">판매작품</a>
+			<a href="./workshop_main.html">공방</a>
+			<a href="./photo_main.html" style="color: #ffc001;">자랑하기</a>
+		</div>
+		<div class="header_search">
+			<input type="text" name="searchkeyword" placeholder="검색">
+			<button type="button" onClick="location.href='./search-list-all.html'"><img src="./images/header/header_serach.png"></button>
+		</div>
+	</div>
+    <div class="sp-nav">
+    <div class="sp-nav-category">
+        <div class="sp-nc-dist">
+            <select id="ma-category" class="custom-select custom-select-lg" >
+                <option value="">선택</option>
+                <option value="f1">One</option>
+                <option value="f2">Two</option>
+                <option value="f3">Three</option>
+            </select><!-- ma-category -->
+            <select id="mid-category" class="custom-select custom-select-lg">
+                <option value="">선택</option>
+                <option class="f1" value="m1">One</option>
+                <option class="f1" value="m2">Two</option>
+                <option class="f1" value="m3">Three</option>
+                <option class="f2" value="m4">One</option>
+                <option class="f2" value="m4">Two</option>
+                <option class="f2" value="m5">Three</option>
+            </select><!-- mid-category -->
+            <select id="sm-category" class="custom-select custom-select-lg">
+              <option value="">선택</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select><!-- sm-category -->
+        </div><!-- sp-nc-dist -->
+        <div class="sp-nc-search">
+            <form class="form-inline">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light sp-btn-search" type="submit">검색</button>
+            </form>
+
+        </div><!-- sp-nc-search -->
+    </div><!-- sp-nav-category -->
+    </div><!-- sp-nav-->
+  </header>
+  <!-- category -->
+
+
+  <!-- grid -->
+  <div class="grid-wrap">
+    <div class="grid">
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#photo-select">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino4.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/nick2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/nick1.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino1.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino3.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino4.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/sero2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item --><div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/hh.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino2.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/gg.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino3.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino3.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino3.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+      <a class="grid-photo-a" href="#">
+        <div class="grid-photo">
+          <img src="images/photo/kino3.jpg" alt="">
+        </div>
+      </a>
+      <div class="grid-photo-cont">
+        <a class="grid-photo-like" href="#">
+          <i class="material-icons">favorite_border</i>
+          <span>18</span>
+        </a>
+        <a class="grid-photo-bookmark" href="#">
+          <i class="material-icons">bookmark</i>
+          <span>2</span>
+        </a>
+        <div class="grid-photo-view">
+          <span class="grid-photo-view-count">조회수</span><span >28</span>
+        </div>
+      </div>
+    </div> <!-- grid-item -->
+
+
+
+  </div><!-- grid -->
+  </div>
+
+  <!-- modal page -->
+  <div class="photo-wrap" id="photo-select">
+    <a href="#close" class="photo-modal-close"></a>
+    <div class="photo-detail">
+      <div class="photo-detail-header">
+        <div class="photo-header-profile">
+          <img src="images/photo/hy.jpg" alt="">
+        </div>
+        <div class="photo-header-userId">
+          <a href="#">
+            <span>nickwooster</span>
+          </a>
+        </div>
+      </div><!-- photo-detail-header -->
+      <div class="photo-img-box">
+        <img src="images/photo/hh.jpg" alt="">
+        <a class="photo-prod-link" href="#photo-select-inner">제품 링크 등록</a>
+      </div><!-- photo-img-box -->
+      <div class="photo-container-box">
+        <div class="photo-box-content">
+          <div class="photo-content">
+            <div class="pt-content">
+              <pre>
+안녕하세요. 반가워요. Hello. Bonjour.
+오늘하루도 즐거운 하루가 되었으면 좋겠어요.
+화이팅!
+</pre>
+            </div>
+            <div class="pt-hashtag">
+              <a href="#">#해시태그</a>
+            </div>
+          </div><!-- content -->
+          <div class="photo-comment">
+            <div class="photo-comments-piece">
+              <span class="comment-userId">소박한 식탁</span> <span class="comment-content">너무 아름다운거 같아요. 딱 제 스타일이에요!</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">어쿠스틱 콜라보</span> <span class="comment-content">멋지다..</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">디에이드</span> <span class="comment-content">힘내요! 응원할게요</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">푸짐한 식탁</span> <span class="comment-content">항상 응원하고 있어요! 잘못 없으세요! 힘내세요!</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">소박한 식탁</span> <span class="comment-content">너무 아름다운거 같아요. 딱 제 스타일이에요!</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">어쿠스틱 콜라보</span> <span class="comment-content">멋지다..</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">디에이드</span> <span class="comment-content">힘내요! 응원할게요</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">푸짐한 식탁</span> <span class="comment-content">항상 응원하고 있어요! 잘못 없으세요! 힘내세요!</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">소박한 식탁</span> <span class="comment-content">너무 아름다운거 같아요. 딱 제 스타일이에요!</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">어쿠스틱 콜라보</span> <span class="comment-content">멋지다..</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">디에이드</span> <span class="comment-content">힘내요! 응원할게요</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">푸짐한 식탁</span> <span class="comment-content">항상 응원하고 있어요! 잘못 없으세요! 힘내세요!</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">어쿠스틱 콜라보</span> <span class="comment-content">멋지다..</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">디에이드</span> <span class="comment-content">힘내요! 응원할게요</span>
+            </div><!-- comment-piece -->
+            <div class="photo-comments-piece">
+              <span class="comment-userId">푸짐한 식탁</span> <span class="comment-content">항상 응원하고 있어요! 잘못 없으세요! 힘내세요!</span>
+            </div><!-- comment-piece -->
+          </div><!-- comment -->
+        </div><!-- photo-box-content -->
+        <div class="photo-box-like">
+          <a class="material-icons"href="#">favorite_border</a>
+          <a class="material-icons"href="#">bookmark_border</a>
+        </div>
+        <div class="photo-box-likecount">
+          <span>좋아요 486개</span>
+        </div>
+        <div class="photo-box-date">
+          <span>07월 03일</span>
+        </div>
+        <div class="photo-box-write">
+          <form class="photo-write-form" action="" method="">
+            <textarea class="photo-write-textarea" aria-label="댓글 달기..." placeholder="댓글 달기..." autocorrect="off" autocomplete="off"></textarea>
+          </form>
+          <script>
+          $("textarea.photo-write-textarea").on('keydown keyup', function () {
+            $(this).height(1).height( $(this).prop('scrollHeight') );
+          });
+          </script>
+
+        </div>
+      </div><!-- photo-content-box -->
+    </div><!-- photo-detail -->
+  </div><!-- photo-wrap -->
+<!-- modal2 page -->
+<div class="photo-wrap" id="photo-select-inner">
+  <a href="#close" class="photo-modal-close"></a>
+  <div class="photo-detail">
+    <div class="photo-detail-header">
+      <div class="photo-header-profile">
+        <img src="images/photo/hy.jpg" alt="">
+      </div>
+      <div class="photo-header-userId">
+        <a href="#">
+          <span>nickwooster</span>
+        </a>
+      </div>
+    </div><!-- photo-detail-header -->
+    <div class="photo-img-box">
+      <img src="images/photo/hh.jpg" alt="">
+    </div><!-- photo-img-box -->
+    <div class="photo-container-box">
+      <div class="photo-box-link-content">
+        <span class="photo-link-title">제품 링크 등록</span>
+        <span class="photo-link-text">
+          사진 속에 제품을 클릭하여 사진 속 <br>제품의 구매링크를 등록해보세요.
+        </span>
+      </div><!-- photo-box-content -->
+      <div class="photo-link-btn">
+        <a class="photo-link-btn-cancel" href="#">취소하기</a>
+        <a class="photo-link-btn-up" href="#">등록완료</a>
+      </div>
+    </div><!-- photo-content-box -->
+  </div><!-- photo-detail -->
+</div><!-- photo-wrap -->
+<!-- chain script -->
+  <script>
+      $("#mid-category").chained("#ma-category");
+      $("#sm-category").chained("#mid-category");
+  </script>
+  <!-- 레이아웃 스크립트 -->
+  <script type="text/javascript">
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 224,
+    horizontalOrder: true,
+    gutter: 20
+  });
+  </script>
+
+  <!-- footer -->
+  <footer>
+  	<div class="bt-footer">
+        <div class="bt-ft-content">
+          <p class="bt-ft-service"><a href="#">서비스소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">회사소개</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">채용정보</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">이용약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">개인정보취급방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">고객의소리</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">제휴/광고문의</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">판매자신청</a></p>
+          <address class="bt-ft-address">
+            상호명 : (주)인테리아&nbsp;&nbsp;이메일 : contact@interia.com&nbsp;&nbsp;팀원 : 경명수 강동현 이상경 성현동 임현식 박서경&nbsp;&nbsp;사업자등록번호 : 111-11-11111&nbsp;&nbsp;통신판매업신고번호 : 제1111-서울관악-0000호&nbsp;&nbsp;주소 : 비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩비트캠프 서울시 서초구 서초동 1327-15 비트아카데미빌딩&nbsp;&nbsp;<strong>NAVERPAY</strong> 안전거래 서비스 : 고객님의 안전거래를 위해 현금 결제 시, 저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다.
+          </address>
+          <span class="bt-ft-copy">Copyright (c) 2018 INTERIA., Ltd, All Rights Reserved</span>
+        </div>
+      </div>
+  </footer>
+  </body>
+</html>
